@@ -1,5 +1,8 @@
 package orderascooter;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Order {
     private String name;
     private String surname;
